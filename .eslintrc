@@ -9,7 +9,7 @@
         "semi": "off",
         "linebreak-style": "off",
         "arrow-parens": "off",
-        "indent": "4"
+        "indent": "off"
     },
     "extends": ["eslint:recommended", "google"]
 }
