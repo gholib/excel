@@ -1,5 +1,3 @@
-const { async } = require("regenerator-runtime");
-
 console.log('Module.js');
 
 async function start() {
