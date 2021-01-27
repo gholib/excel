@@ -18,9 +18,9 @@ const jsLoaders = () => {
         }
     ]
 
-    if (isDev) {
+    // if (isDev) {
 
-    }
+    // }
 
     return loaders
 }
@@ -29,12 +29,12 @@ const jsLoaders = () => {
 module.exports = {
     context: path.resolve(__dirname, 'src'),
     mode: 'development',
-    entry:'./index.js',
-    output:{
+    entry: './index.js',
+    output: {
         filename: filename('js'),
         path: path.resolve(__dirname, 'dist')
     },
-    resolve:{
+    resolve: {
         extensions: ['.js'],
         alias: {
             '@': path.resolve(__dirname, 'src'),
@@ -46,7 +46,7 @@ module.exports = {
         new CleanWebpackPlugin(),
         new HTMLWebpackPlugin({
             template: 'index.html',
-            minify:{
+            minify: {
                 removeComments: isProd,
                 collapseWhitespace: isProd
             }
@@ -69,8 +69,8 @@ module.exports = {
                 test: /\.s[ac]ss$/i,
                 use: [
                     MiniCssExtractPlugin.loader,
-                    "css-loader",
-                    "sass-loader",
+                    'css-loader',
+                    'sass-loader',
                 ],
             },
             {
@@ -80,4 +80,4 @@ module.exports = {
             }
         ]
     }
-} 
+}
